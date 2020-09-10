@@ -1,0 +1,128 @@
+.page-register {
+    .header {
+        border-bottom: 2px solid #D8D8D8;
+        min-width: 980px;
+        color: #666;
+        header {
+            margin: 0 auto;
+            padding: 10px 0;
+            width: 980px;
+            .site-logo {
+                display: inline-block;
+                width: 98px;
+                height: 36px;
+                text-indent: -1000px;
+                overflow: hidden;
+                background: url("https://s0.meituan.net/bs/file/?f=fe-sso-fs:build/assets/logo.6a89007.png");
+                background-position: center center;
+                background-size: 100%;
+            }
+            .login {
+                float: right;
+                height: 36px;
+                line-height: 36px;
+                span {
+                    margin-right: 10px;
+                    font-size: 14px;
+                    vertical-align: sub;
+                }
+                a {
+                    padding: 5px 10px;
+                    background-image: linear-gradient(135deg, #FFD000 0, #FFBD00 100%);
+                    color: #222;
+                    text-decoration: none;
+                    font-size: 12px;
+                    font-weight: 400;
+                }
+            }
+            .bold {
+                font-style: normal;
+                font-size: 14px;
+            }
+        }
+    }
+    >.content {
+        margin: 0 auto 30px;
+        padding-top: 30px;
+        width: 980px;
+        min-height: 300px;
+        padding-right: 550px;
+        box-sizing: border-box;
+        .pw-strength {
+            position: relative;
+            width: 330px;
+            top: -10px;
+            left: 100px;
+            background: #eee;
+            .bar {
+                background: #f76120;
+                height: 20px;
+                width: 0;
+                overflow: hidden;
+                transition: all .4s linear;
+                // 弱
+                &.week {
+                    width: 108px;
+                    background: #f76120;
+                }
+                // 中
+                &.normal {
+                    width: 218px;
+                    background: #ff8900;
+                }
+                // 强
+                &.strong {
+                    width: 330px;
+                    background: #5bab3c;
+                }
+            }
+            .letter {
+                position: absolute;
+                top: 0;
+                left: 0;
+                span {
+                    display: block;
+                    float: left;
+                    text-align: center;
+                    font-size: 12px;
+                    height: 20px;
+                    line-height: 20px;
+                    width: 108px;
+                    border-right: 2px solid #fff;
+                    color: #fff;
+                }
+            }
+        }
+        .btnSubmit {
+            color: #222;
+            background-image: linear-gradient(135deg, #FFD000 0, #FFBD00 100%);
+            border-width: 0;
+            box-shadow: 0 2px 1px rgba(191, 105, 0, .15);
+            background-size: 100%;
+            font-weight: 600;
+            line-height: 1.5;
+            letter-spacing: .1em;
+            text-align: center;
+        }
+        .status {
+            font-size: 13px;
+            margin-left: 100px;
+            color: #e6a23c;
+        }
+        .error {
+            color: red;
+        }
+        .f1 {
+            display: block;
+        }
+    }
+    >footer {
+        color: #999;
+        border-top: 1px solid #EEE;
+        padding-top: 20px;
+        font-size: 13px;
+    }
+    a {
+        text-decoration: none;
+    }
+}
